@@ -12,6 +12,7 @@
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
     integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/devicons/devicon@master/devicon.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.2/animate.min.css">
 
   <title>XENIA</title>
 
@@ -61,6 +62,7 @@
     }
 
     .icon {
+      opacity: .8;
       box-sizing: border-box;
       margin: 0px;
       min-width: 0px;
@@ -68,15 +70,51 @@
       line-height: 1;
     }
 
+    .icon:hover {
+      cursor: pointer;
+      transform: scale(1.3);
+      opacity: 1;
+    }
+
     i {
       font-size: 50px;
       padding-right: 15px;
+    }
+
+    .scene {
+      margin-left: auto;
+      align-content: center;
+      width: 100%;
+      display: flex;
+      position: relative;
+    }
+
+    .scene img {
+      opacity: .8;
+      width: 150px;
+    }
+
+    .item1 {
+      padding: 10px;
+    }
+
+    .item2 {
+      padding: 10px;
+    }
+
+    .item3 {
+      padding: 10px;
+    }
+
+    .item1::after {
+      background-color: red;
+      translate: rotate(10deg);
     }
   </style>
 </head>
 
 <body>
-  <div class="container mt-5">
+  <div class="container mt-3">
     <div class="name text-center">
       <h2>XENIA</h2>
     </div>
@@ -97,13 +135,24 @@
     <div class="tab-content" id="pills-tabContent">
       <!--content 1-->
       <div class="tab-pane fade show active" id="pills-about" role="tabpanel" aria-labelledby="pills-about-tab">
-        <h1 class="pt-3 pb-3">Xenia</h1>
+        <h1 class="pt-3 pb-3 mb-4">Learning</h1>
 
-        <div class="scene">
-          <h1>MachinLearning</h1>
+        <div class="scene row text-center">
+          <div class="item1 col-lg-4 animated fadeIn">
+            <img src="img/ai.png" alt=""><br>
+            <h5 class="pt-3">Machine Learning</h5>
+          </div>
+          <div class="item2 col-lg-4 animated fadeIn">
+            <img src="img/security.png" alt=""><br>
+            <h5 class="pt-3">Security</h5>
+          </div>
+          <div class="item2 col-lg-4 animated fadeIn">
+            <img src="img/blockchain.png" alt=""><br>
+            <h5 class="pt-3">BlockChain</h5>
+          </div>
         </div>
 
-        <h1 class="pt-3 pb-3">Skills</h1>
+        <h1 class="pt-3 pb-3 mt-4">Skills</h1>
 
         <div class="pl-4">
           <p><strong>[ All works ]</strong></p>
