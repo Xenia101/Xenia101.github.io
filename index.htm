@@ -9,6 +9,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
   <!-- Bootstrap CSS -->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
     integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/devicons/devicon@master/devicon.min.css">
@@ -17,11 +18,23 @@
   <title>XENIA</title>
 
   <style>
-    body {
-      background-color: #6AAFE6;
+    body,
+    html {
+      background: #6190E8;
+      /* fallback for old browsers */
+      background: -webkit-linear-gradient(to left, #A7BFE8, #6190E8);
+      /* Chrome 10-25, Safari 5.1-6 */
+      background: linear-gradient(to left, #A7BFE8, #6190E8);
+      /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+      -ms-overflow-style: none;
+
       color: #FFFFF3;
       padding: 0;
       margin: 0;
+    }
+
+    ::-webkit-scrollbar {
+      display: none;
     }
 
     hr {
@@ -76,13 +89,13 @@
       opacity: 1;
     }
 
-    i {
+    .icon i {
       font-size: 50px;
       padding-right: 15px;
     }
 
     .scene {
-      margin-left: auto;
+      margin: 0 auto;
       align-content: center;
       width: 100%;
       display: flex;
@@ -91,24 +104,43 @@
 
     .scene img {
       opacity: .8;
-      width: 150px;
+      width: 100px;
     }
 
-    .item1 {
-      padding: 10px;
+    .sns ul {
+      list-style: none;
+      margin: 0 auto;
+      padding: 0;
     }
 
-    .item2 {
-      padding: 10px;
+    .sns li {
+      padding-left: 10px;
+      padding-right: 10px;
+      float: left
     }
 
-    .item3 {
-      padding: 10px;
+    .sns a {
+      color: #FFFFF3;
+      text-decoration: none;
     }
 
-    .item1::after {
-      background-color: red;
-      translate: rotate(10deg);
+    .sns ul li i {
+      font-size: 30px;
+    }
+
+    .project-list ul {
+      list-style: none;
+      padding: 0;
+      margin: 0;
+    }
+
+    .project-list a {
+      text-decoration: none;
+      color: #FFFFF3;
+    }
+
+    .see-more:hover {
+      text-decoration: underline;
     }
   </style>
 </head>
@@ -118,6 +150,15 @@
     <div class="name text-center">
       <h2>XENIA</h2>
     </div>
+    <div class="sns row text-center mt-4">
+      <ul>
+        <li><a href="https://github.com/Xenia101"><i class="fa fa-github"></i></a></li>
+        <li><a href="https://www.facebook.com/profile.php?id=100009414252527"><i class="fa fa-facebook-square"></i></a>
+        </li>
+        <li><a href="https://www.linkedin.com/in/junyeon-ahn-0082401b7"><i class="fa fa-linkedin-square"></i></a></li>
+        <li><a href="mailto:lommy101@gmail.com"><i class="fa fa-envelope"></i></a></li>
+      </ul>
+    </div>
     <div class="nav-info mt-2">
       <ul class="nav mb-3" role="tablist">
         <li>
@@ -126,7 +167,7 @@
         </li>
         <li>
           <a id="pills-repo-tab" data-toggle="pill" href="#pills-repo" role="tab" aria-controls="pills-repo"
-            aria-selected="false">Projects</a>
+            aria-selected="false">-</a>
         </li>
       </ul>
     </div>
@@ -137,16 +178,18 @@
       <div class="tab-pane fade show active" id="pills-about" role="tabpanel" aria-labelledby="pills-about-tab">
         <h1 class="pt-3 pb-3 mb-4">Learning</h1>
 
+
+
         <div class="scene row text-center">
-          <div class="item1 col-lg-4 animated fadeIn">
+          <div class="col-lg-4 animated fadeIn">
             <img src="img/ai.png" alt=""><br>
             <h5 class="pt-3">Machine Learning</h5>
           </div>
-          <div class="item2 col-lg-4 animated fadeIn">
+          <div class="col-lg-4 animated fadeIn">
             <img src="img/security.png" alt=""><br>
             <h5 class="pt-3">Security</h5>
           </div>
-          <div class="item2 col-lg-4 animated fadeIn">
+          <div class="col-lg-4 animated fadeIn">
             <img src="img/blockchain.png" alt=""><br>
             <h5 class="pt-3">BlockChain</h5>
           </div>
@@ -189,12 +232,75 @@
           <div class="icon"><i class="devicon-go-plain"></i></div>
         </div>
 
-        <h1 class="pt-3 pb-3"></h1>
+        <h1 class="pt-3 pb-3">Projects</h1>
+
+        <div class="project-list p-1 m-2">
+          <ul>
+            <li>
+              <a href="https://github.com/Xenia101/KeyStroke-Dynamics">
+                <h4>Two-factor Authentication technology based on Key-Stroke <sup><i class="fa fa-link"
+                      aria-hidden="true"></i></sup></h4>
+              </a>
+              <p>User Verification based on Keystroke Dynamics</p>
+            </li>
+            <li>
+              <a href="https://github.com/Xenia101/Network-Anomaly-Detection-System">
+                <h4>Network Anomaly Detection <sup><i class="fa fa-link" aria-hidden="true"></i></sup></h4>
+              </a>
+              <p>Flow Based netwrok anomaly detection system</p>
+            </li>
+            <li>
+              <a href="http://withme.xyz/info">
+                <h4>WITHME
+                  <sup><i class="fa fa-link" aria-hidden="true"></i></sup></h4>
+              </a>
+              <p>Web application Project. WITHME.xyz</p>
+            </li>
+            <li><a href="https://pf.kakao.com/_xmxedxaC">
+                <h4>HoseoService on Kakao Channel
+                  <sup>
+                    <i class="fa fa-link" aria-hidden="true"></i></sup></h4>
+              </a>
+              <p>ChatBot Service on Kakao CH</p>
+            </li>
+          </ul>
+          <div>
+            <a class="see-more" href="https://github.com/Xenia101?tab=repositories">
+              <h4>▶ See more projects..</h4>
+            </a>
+          </div>
+        </div>
+
+        <h1 class="pt-3 pb-3">History</h1>
+        <div class="p-1 m-2">
+          <div>
+            <h4>Education</h4>
+            <p>-</p>
+          </div>
+          <div>
+            <h4>Awards</h4>
+            <p>-</p>
+          </div>
+          <div>
+            <h4>Paper</h4>
+            <p>-</p>
+          </div>
+          <div>
+            <h4>Certification</h4>
+            <p>-</p>
+          </div>
+        </div>
+
+        <h1 class="pt-3 pb-3">Career</h1>
+        <div class="p-1 m-2">
+          <h3>None.. Please hire me 🔥</h3>
+        </div>
+
       </div>
 
       <!--content 2-->
       <div class="tab-pane fade" id="pills-repo" role="tabpanel" aria-labelledby="pills-repo-tab">
-        2
+        -
       </div>
     </div>
   </div>
