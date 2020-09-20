@@ -9,28 +9,34 @@
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
   <!-- Bootstrap CSS -->
+  <link rel="stylesheet" href="css/custom.css">
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
     integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/devicons/devicon@master/devicon.min.css">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.2/animate.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css">
+  <link href="https://fonts.googleapis.com/css2?family=Libre+Barcode+128+Text&family=Noto+Sans+KR:wght@500&display=swap"
+    rel="stylesheet">
 
   <title>XENIA</title>
 
   <style>
     body,
     html {
-      background: #6190E8;
+      background: #4568DC;
       /* fallback for old browsers */
-      background: -webkit-linear-gradient(to left, #A7BFE8, #6190E8);
+      background: -webkit-linear-gradient(to left, #B06AB3, #4568DC);
       /* Chrome 10-25, Safari 5.1-6 */
-      background: linear-gradient(to left, #A7BFE8, #6190E8);
+      background: linear-gradient(to left, #B06AB3, #4568DC);
       /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
-      -ms-overflow-style: none;
 
+      -ms-overflow-style: none;
       color: #FFFFF3;
       padding: 0;
       margin: 0;
+
+      font-family: 'Noto Sans KR', sans-serif;
     }
 
     ::-webkit-scrollbar {
@@ -142,13 +148,58 @@
     .see-more:hover {
       text-decoration: underline;
     }
+
+    footer {
+      width: 100%;
+      padding: 0;
+      margin: 0 auto;
+    }
+
+    .badge {
+      font-size: 12px;
+    }
+
+    .gotop {
+      position: fixed;
+      bottom: 5px;
+      right: 15px;
+      font-size: 30px;
+      opacity: .6;
+    }
+
+    .gotop a {
+      text-decoration: none;
+      color: #FFFFF3;
+    }
+
+    .item {
+      padding: 10px;
+    }
+
+    .item img {
+      width: 30px;
+    }
+
+    .intro {
+      height: 300px;
+    }
+
+    .name {
+      -webkit-user-select: none;
+      -khtml-user-select: none;
+      -moz-user-select: none;
+      -o-user-select: none;
+      user-select: none;
+      font-size: 75px;
+      font-family: 'Libre Barcode 128 Text', cursive;
+    }
   </style>
 </head>
 
 <body>
-  <div class="container mt-3">
+  <div class="container mt-3" id="top">
     <div class="name text-center">
-      <h2>XENIA</h2>
+      <p>XENIA</p>
     </div>
     <div class="sns row text-center mt-4">
       <ul>
@@ -163,26 +214,23 @@
       <ul class="nav mb-3" role="tablist">
         <li>
           <a class="active" id="pills-about-tab" data-toggle="pill" href="#pills-about" role="tab"
-            aria-controls="pills-about" aria-selected="true">About</a>
+            aria-controls="pills-about" aria-selected="true"></a>
         </li>
         <li>
           <a id="pills-repo-tab" data-toggle="pill" href="#pills-repo" role="tab" aria-controls="pills-repo"
-            aria-selected="false">-</a>
+            aria-selected="false"></a>
         </li>
       </ul>
     </div>
-    <hr>
+    <hr class="mt-5 mb-5">
 
     <div class="tab-content" id="pills-tabContent">
       <!--content 1-->
       <div class="tab-pane fade show active" id="pills-about" role="tabpanel" aria-labelledby="pills-about-tab">
-        <h1 class="pt-3 pb-3 mb-4">Learning</h1>
-
-
-
+        <h1 class="pb-3 mb-4">Learning</h1>
         <div class="scene row text-center">
           <div class="col-lg-4 animated fadeIn">
-            <img src="img/ai.png" alt=""><br>
+            <img src="img/ml.png" alt=""><br>
             <h5 class="pt-3">Machine Learning</h5>
           </div>
           <div class="col-lg-4 animated fadeIn">
@@ -191,7 +239,7 @@
           </div>
           <div class="col-lg-4 animated fadeIn">
             <img src="img/blockchain.png" alt=""><br>
-            <h5 class="pt-3">BlockChain</h5>
+            <h5 class="pt-3">BlockChain <span class="badge badge-light">New</span></h5>
           </div>
         </div>
 
@@ -210,10 +258,13 @@
           <div class="icon"><i class="devicon-css3-plain"></i></div>
           <div class="icon"><i class="devicon-javascript-plain"></i></div>
           <div class="icon"><i class="devicon-jquery-plain"></i></div>
+          <div class="icon"><i class="devicon-chrome-plain"></i></div>
+          <div class="icon"><i class="devicon-npm-original-wordmark"></i></div>
           <div class="icon"><i class="devicon-bootstrap-plain"></i></div>
           <div class="icon"><i class="devicon-django-plain"></i></div>
           <div class="icon"><i class="devicon-debian-plain"></i></div>
           <div class="icon"><i class="devicon-ubuntu-plain"></i></div>
+          <div class="icon"><i class="devicon-express-original"></i></div>
           <div class="icon"><i class="devicon-git-plain"></i></div>
           <div class="icon"><i class="devicon-mysql-plain"></i></div>
           <div class="icon"><i class="devicon-vuejs-plain"></i></div>
@@ -221,7 +272,7 @@
           <div class="icon"><i class="devicon-nginx-plain"></i></div>
           <div class="icon"><i class="devicon-atom-plain"></i></div>
           <div class="icon"><i class="devicon-visualstudio-plain"></i></div>
-          <div class="icon"><i class="devicon-npm-plain"></i></div>
+          <div class="icon"><i class="devicon-slack-plain"></i></div>
         </div>
 
         <div class="pl-4">
@@ -233,6 +284,51 @@
         </div>
 
         <h1 class="pt-3 pb-3">Projects</h1>
+
+        <div class="owl-carousel owl-theme">
+          <div class="item">
+            <img class="logo shadow rounded" src="img/logos/keystroke.png" alt="">
+          </div>
+          <div class="item">
+            <img class="logo shadow rounded" src="img/logos/network.png" alt="">
+          </div>
+          <div class="item">
+            <img class="logo shadow rounded" src="img/logos/withme.png" alt="">
+          </div>
+          <div class="item">
+            <img class="logo shadow rounded" src="img/logos/hoseo1.jpg" alt="">
+          </div>
+          <div class="item">
+            <img class="logo shadow rounded" src="img/logos/hoseo2.png" alt="">
+          </div>
+          <div class="item">
+            <img class="logo shadow rounded" src="img/logos/hoseo3.png" alt="">
+          </div>
+          <div class="item">
+            <img class="logo shadow rounded" src="img/logos/Xentube.png" alt="">
+          </div>
+          <div class="item">
+            <img class="logo shadow rounded" src="img/logos/hais.png" alt="">
+          </div>
+          <div class="item">
+            <img class="logo shadow rounded" src="img/logos/xenia.png" alt="">
+          </div>
+          <div class="item">
+            <img class="logo shadow rounded" src="img/logos/xenia2.png" alt="">
+          </div>
+          <div class="item">
+            <img class="logo shadow rounded" src="img/logos/xenia3.png" alt="">
+          </div>
+          <div class="item">
+            <img class="logo shadow rounded" src="img/logos/nichijou.png" alt="">
+          </div>
+          <div class="item">
+            <img class="logo shadow rounded" src="img/logos/shareme.png" alt="">
+          </div>
+          <div class="item">
+            <img class="logo shadow rounded" src="img/logos/node-chatting.png" alt="">
+          </div>
+        </div>
 
         <div class="project-list p-1 m-2">
           <ul>
@@ -266,7 +362,7 @@
           </ul>
           <div>
             <a class="see-more" href="https://github.com/Xenia101?tab=repositories">
-              <h4>▶ See more projects..</h4>
+              <h5>→ See more projects..</h5>
             </a>
           </div>
         </div>
@@ -274,26 +370,82 @@
         <h1 class="pt-3 pb-3">History</h1>
         <div class="p-1 m-2">
           <div>
-            <h4>Education</h4>
-            <p>-</p>
+            <h4>- Education</h4>
+            <ul>
+              <li>
+                <h5>KUCIS '유무선 네트워크 보안 실습' 교육 <small>[2019.9]</small></h5>
+                <p>2019년 KUCIS '유무선 네트워크 보안 실습' 교육 수료</p>
+              </li>
+              <li>
+                <h5>Best of the Best 9th <small>[2020.7 - 2021.2]</small></h5>
+                <p>한국정보기술연구원(KITRI)에서 주관하고 있는 사이버 보안인재 양성프로그램</p>
+              </li>
+            </ul>
           </div>
           <div>
-            <h4>Awards</h4>
-            <p>-</p>
+            <h4>- Awards</h4>
+            <ul>
+              <li>
+                <h5>K-사이버 시큐리티 챌린지 2019 <small>[2019.12]</small></h5>
+                <p>사이버보안 빅데이터·AI 활용 플래그십 3위</p>
+              </li>
+            </ul>
           </div>
           <div>
-            <h4>Paper</h4>
-            <p>-</p>
+            <h4>- Paper</h4>
+            <ul>
+              <li>
+                <h5>Key-Stroke 기반 Two-Factor 인증 기술 <small>[2020.9]</small></h5>
+              </li>
+            </ul>
           </div>
           <div>
-            <h4>Certification</h4>
-            <p>-</p>
+            <h4>- Certification</h4>
+            <ul>
+              <li>
+                <h5>정보처리기사 <small>[2020]</small></h5>
+                <p>2020년도 정보처리기사 실기 시험 준비중 !</p>
+              </li>
+            </ul>
+          </div>
+          <div>
+            <h4>- ETC</h4>
+            <ul>
+              <li>
+                <h5>HAIS <small>[2019.2]</small></h5>
+                <p>학과 정보보호 동아리 개설 및 KUCIS 가입</p>
+              </li>
+              <li>
+                <h5>KUCIS <small>[2019.2 - 2021.2]</small></h5>
+                <p>한국인터넷진흥원이 지원하는 2019년 대학 정보보호 동아리 연합회 활동 (HAIS)</p>
+              </li>
+              <li>
+                <h5>2019 교내 캡스톤 디자인 <small>[2019.3 - 2019.9]</small></h5>
+                <p>교내 캡스톤 디자인 경진 대회 참가 (CNN 기반 사용자 인증)</p>
+              </li>
+              <li>
+                <h5>해킹방지워크샵 23rd <small>[2019.12]</small></h5>
+                <p>2019 Annual Security Users' Festival 해킹방지워크샵 참가</p>
+              </li>
+              <li>
+                <h5>사이버작전 경영대회 <small>[2020.9]</small></h5>
+                <p>국방부 사이버작전 경영대회(CTF) 참가</p>
+              </li>
+              <li>
+                <h5>교내 AI·SW 창업 아이디어 경진대회 <small>[2020.9]</small></h5>
+                <p>교내 AI·SW 창업 아이디어 경진대회 참가 (감정 및 시선 분석을 활용한 소통 가능한 강의 플랫폼)</p>
+              </li>
+              <li>
+                <h5>교내 Google Teachable Machine AI 경진대회 <small>[2020.9]</small></h5>
+                <p>교내 Google Teachable Machine AI 경진대회 참가 (냉장고 속 식재료를 활용한 AI 추천 레시피)</p>
+              </li>
+            </ul>
           </div>
         </div>
 
         <h1 class="pt-3 pb-3">Career</h1>
-        <div class="p-1 m-2">
-          <h3>None.. Please hire me 🔥</h3>
+        <div class="p-1 m-2 mb-5 text-center">
+          <h4>🔥 None.. Please hire me 🔥</h4>
         </div>
 
       </div>
@@ -304,6 +456,12 @@
       </div>
     </div>
   </div>
+
+  <div class="gotop">
+    <a href="#top"><i class="fa fa-angle-double-up" aria-hidden="true"></i></a>
+  </div>
+
+  <footer class="text-center p-2"><strong>ⓒ 2020. XENIA</strong></footer>
 
   <!-- Optional JavaScript -->
   <!-- jQuery first, then Popper.js, then Bootstrap JS -->
@@ -316,6 +474,30 @@
   <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"
     integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV"
     crossorigin="anonymous"></script>
+
+  <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
+    integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n"
+    crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
+  <script type="application/javascript">
+    $('.owl-carousel').owlCarousel({
+      loop: true,
+      responsive: {
+        600: {
+          items: 8
+        }
+      },
+      margin: 5,
+      nav: false,
+      stagePadding: 65,
+      mouseDrag: true,
+      touchDrag: true,
+      autoplay: true,
+      autoplayTimeout: 2000,
+      autoplayHoverPause: false,
+      animateOut: 'fadeIn'
+    });
+  </script>
 </body>
 
 </html>
