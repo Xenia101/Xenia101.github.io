@@ -1,7 +1,7 @@
 body,
 html {
     -ms-overflow-style: none;
-    color: #FFFFF3;
+    color: #383A3F;
     padding: 0;
     margin: 0;
     width: 100%;
@@ -14,7 +14,7 @@ html {
 }
 
 hr {
-    border: solid 0.1px #FFFFF3;
+    border: solid 0.1px #383A3F;
 }
 
 .nav-info ul {
@@ -33,7 +33,7 @@ hr {
 
 .nav-info a {
     text-decoration: none;
-    color: #FFFFF3;
+    color: #383A3F;
 }
 
 .icon-table {
@@ -96,7 +96,7 @@ hr {
 }
 
 .sns a {
-    color: #FFFFF3;
+    color: #383A3F;
     text-decoration: none;
 }
 
@@ -112,7 +112,7 @@ hr {
 
 .project-list a {
     text-decoration: none;
-    color: #FFFFF3;
+    color: #383A3F;
 }
 
 .see-more:hover {
@@ -139,7 +139,7 @@ footer {
 
 .gotop a {
     text-decoration: none;
-    color: #FFFFF3;
+    color: #383A3F;
 }
 
 .item {
