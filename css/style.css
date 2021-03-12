@@ -174,3 +174,23 @@ footer {
     bottom: 0;
     left: 0;
 }
+
+a {
+    color: #383A3F;
+    text-decoration: none;
+}
+
+a:link {
+    color: #383A3F;
+    text-decoration: none;
+}
+
+a:visited {
+    color: #383A3F;
+    text-decoration: none;
+}
+
+a:hover {
+    color: #383A3F;
+    text-decoration: none;
+}
